@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  background-color: #efefef;
+  font-family: Arial;
+}
+
+.m-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-height: 85vh;
+  width: 100%;
+}
+
+.m-grid .m-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 26%;
+  height: 20vh;
+  font-size: 5vw;
+  color: #fff;
+  width: 20vw;
+}
+
+.m-header-title {
+  display: block;
+  text-align: center;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.m-footer-text {
+  display: block;
+  text-align: center;
+  margin: 10px 0;
+  font-style: italic;
+}
+
+.m-grid-layout {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0 20px 0;
+}
+
+.m-container-fluid {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: lightgray;
+  padding-bottom: 50px;
+}
+
+.m-button-parent {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5%;
+}
+
+.m-button {
+  border: none;
+  color: white;
+  background-color: #72c3dc;
+  border-bottom: 5px solid #2b8ead;
+  text-transform: uppercase;
+  border-radius: 15px;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 10px 0 10px 10px;
+  cursor: pointer;
+  min-width: 120px;
+  width: 19vw;
+}
+
+.one,
+.eight {
+  background-color: #6f98a8;
+}
+
+.two,
+.four {
+  background-color: #2b8ead;
+}
+
+.three,
+.five,
+.nine {
+  background-color: #2f454e;
+}
+
+.six,
+.seven {
+  background-color: #bfbfbf;
+}
+
+@media only screen and (max-width: 481px) {
+  body {
+    background-color: #fff;
+  }
+
+  .m-header-text {
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: #333333;
+    color: #e0e0e0;
+    margin: 0;
+    letter-spacing: 0.1em;
+  }
+
+  .m-container-fluid {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding-bottom: 10px;
+  }
+
+  .m-button-parent {
+    display: flex;
+    flex-direction: row;
+    margin: 0 5%;
+    justify-content: center;
+  }
+
+  .m-grid .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 85vw;
+    min-width: 85vw;
+    height: 5vh;
+    color: #000;
+    background-color: #efefef;
+    margin: 2px 0;
+  }
+
+  .one,
+  .eight {
+    border-left: 10px solid #6f98a8;
+  }
+
+  .two,
+  .four {
+    border-left: 10px solid #2b8ead;
+  }
+
+  .three,
+  .five,
+  .nine {
+    border-left: 10px solid #2f454e;
+  }
+
+  .six,
+  .seven {
+    border-left: 10px solid #bfbfbf;
+  }
+}

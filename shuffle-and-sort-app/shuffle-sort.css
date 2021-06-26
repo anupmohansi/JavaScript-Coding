@@ -124,7 +124,7 @@ body {
     justify-content: center;
   }
 
-  .m-grid .box {
+  .m-grid .m-box {
     display: flex;
     align-items: center;
     justify-content: center;
